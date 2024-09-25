@@ -1,0 +1,159 @@
+
+###
+@url = http://localhost:8080/negozio
+@ingredienti = dbingredienti
+GET {{url}}/{{ingredienti}} HTTP/1.1
+
+###
+@url = http://localhost:8080/negozio
+###
+GET {{url}}/getingrediente/5 HTTP/1.1
+###
+@url = http://localhost:8080/negozio/ingrediente?nome=Burro 
+GET {{url}} HTTP/1.1
+###
+@url = http://localhost:8080/negozio
+GET {{url}}/getnome/Uova HTTP/1.1
+
+
+### 
+@url = http://localhost:8080/negozio
+POST {{url}}/addData HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+id=2123&nome=dsfa&marca=POST&unitàMisura=L&valore=20.6
+
+
+
+
+###
+//http://localhost:8080/Ricette/getRicettaIng?id=4
+@url = http://localhost:8080
+GET {{url}}/Ricette/getRicettaIng?id=4 HTTP/1.1
+
+####################################//Non funzionate 
+
+###
+@url = http://localhost:8080
+GET {{url}}/Ricette/getRicette/tipo/contorno HTTP/1.1
+
+
+###Carrello
+@url = http://localhost:8080/negozio/utente/2/aggiungi/carrello
+
+ // http://localhost:8080/negozio/utente/1/aggiungi/carrello
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+{
+    "id":2,
+    "nome":"Mela Verdee",
+    "marca":"Albero Verdee",
+    "unitàMisura":"Kg",
+    "valore":1000,
+    "prezzo":2.5676
+}
+
+### Venduti
+@url = http://localhost:8080/negozio/1/ingredienti/aggiungi
+
+GET {{url}}?prezzo=2.23 HTTP/1.1
+Content-Type: application/json
+{
+    "id":4,
+    "nome":"Mela Verdee",
+    "marca":"Albero Verdee",
+    "unitàMisura":"Kg",
+    "valore":10,
+    "prezzo":2.521
+}
+
+
+
+
+
+
+###
+@url = http://localhost:8080/Ricette/getRicettaIng?id=1
+GET {{url}} HTTP/1.1
+
+###Delete
+@url =http://localhost:8080/negozio/utente/1/ingredienit/elimina?idIngrediente=39&idNegozio=2
+
+DELETE {{url}} HTTP/1.1
+
+
+
+
+### 
+@url = http://localhost:8080/negozio
+@id = 2
+POST {{url}}/{{id}}/ingredienti/aggiungi HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+nome=Mela Verdee&marca=Albero Verdee&unitàMisura=Kg&valore=10&prezzo=2.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####
+@url = http://localhost:8080/negozio
+@id = 2
+POST {{url}}/utente/1/aggiungi/carrello HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+nome=Mela Verdee&marca=Albero Verdee&unitàMisura=Kg&valore=10&prezzo=2.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+@url = http://localhost:8080/negozio
+POST {{url}}/addJson HTTP/1.1
+Content-Type: application/json
+{
+    "id":0,
+    "nome":"MELLLLA",
+    "costo":8.100,
+    "marca":"POST",
+    "unitàMisura":"L",
+    "valore": 1
+}
+
+
+###
+@url = http://localhost:8080/negozio/utente/aggiungono/ingredienit/elimina?idIngrediente=2&idUtente=1
+
+DELETE {{url}} HTTP/1.1
+
+###
+@url =  http://localhost:8080/negozio/utente/1/ingredienit/elimina?idIngrediente=1&idNegozio=5
+
+DELETE {{url}} HTTP/1.1

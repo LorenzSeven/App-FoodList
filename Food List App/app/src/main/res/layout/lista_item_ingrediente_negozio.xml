@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="100">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="60dp">
+
+        <TextView
+            android:id="@+id/Textview_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:hint="Nome"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Textview_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:hint="marca"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Textview_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:hint="peso"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Textview_costo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:hint="costo"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+
+    </TableRow>
+</TableLayout>

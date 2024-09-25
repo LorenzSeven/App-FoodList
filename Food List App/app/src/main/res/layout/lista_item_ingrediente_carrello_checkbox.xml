@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_green_square"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <CheckBox
+        android:id="@+id/CheckboxIngrFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:buttonTint="@color/white"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/TextViewNomeIngrediente"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:text="ingrediente"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btnImgViewIncrementa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:src="@drawable/border_white"
+        android:background="@drawable/ic_positivo" />
+
+    <TextView
+        android:id="@+id/textViewQuantià"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/btnImgViewDecrementa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/border_white"
+        android:layout_weight="5"
+        android:background="@drawable/ic_negativo" />
+
+
+</LinearLayout>

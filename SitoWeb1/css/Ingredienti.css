@@ -1,0 +1,359 @@
+
+/* css.barra in alto */
+* {box-sizing: border-box;}
+
+body{
+    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/SitoWeb1/immagini/sfondoMainNuovo.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+    /*aspetto*/
+    width: 100%;
+    height: 50px;
+    color: black;
+    /*posizione*/
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+a{
+    /*caratteristiche*/
+    text-decoration: none;
+}
+
+.linkButton{
+        /*aspetto*/
+        width: 100px;
+        height: 30px;
+        border: black solid;
+        /*posizione*/
+        display: inline-block;
+        position: relative;
+        top: 25%;
+        margin-left: 2%;
+         /*caratteristiche*/
+         font-size: 70%;
+         word-break:normal;
+         text-align: center;
+}
+
+.linkButton:hover{
+    background-color: gray;
+}
+
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header {
+  height: 90px;
+  overflow: hidden;
+  /*background-image: linear-gradient( red,rgb(191, 72, 72)); */
+  background-color: white;
+  border-bottom: #59A52C solid 2px;
+  padding: 20px 20px;
+    
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0px 0px 10px 0px #59A52C;
+}
+
+.topA {
+  float: left;
+  background-color: white;
+  color:#59A52C;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 35px;
+  
+}
+
+
+.header a:active {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a:hover {
+  color:#8deb57;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+}
+
+.header-right {
+  float: right;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .header-right{
+    display: none;
+  }
+
+}
+@media screen and (min-width: 900px){
+    .checkbtn{
+        display: none;
+    }
+  
+    
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: rebeccapurple;
+    
+    
+}
+
+#check{
+    display: none;
+
+}
+
+#logoContainer{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+  
+#logo{
+    width: 100%;
+    height: 100%;
+}
+  
+#searchBar {
+    /*aspetto*/
+    height: 45px;
+    width: 300px;
+    border-radius: 20px;
+    /*caratteristiche*/
+    font-size: 16px;
+    padding: 5px 10px 5px 20px;
+    border: black solid 2px;
+    color: #59A52C;
+}
+
+/*AGGIUNTE*/
+
+
+#lista {
+  /*aspetto*/
+  height: 20px;
+  width: 200px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  /*posizione*/
+  position: absolute;
+  top: 53px;
+  left: 37%;
+  padding: 6px;
+  /*caratteristiche*/
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute;
+  height: fit-content;
+  width: max-content;
+  list-style: none;
+  visibility: hidden;
+}
+
+#myUL li a:hover:not(.header) {
+  color: red;
+}
+
+
+.sfondo{
+    /*aspetto*/
+    height: 1000px;
+    /*posizione*/
+    display: inline-block;
+    margin-top:100px;
+    /*caratteristiche*/
+    text-align: center;
+}
+
+.riquadriRicette{
+    /*aspetto*/
+    height: 220px;
+    width: 240px;
+    border: black solid;
+    background-color: gray;
+    border-radius: 20px;
+    /*posizione*/
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.riquadriRicette:hover{
+    background-color: red;
+}
+
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px;
+    color: black;
+    display: block; /* Make it into a block element to fill the whole list */
+}
+  
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+
+#bottomRow{
+    height: 50px;
+    background-color: gray;
+    display: inline-block;
+    margin:0;
+    padding: 0;
+}    
+    
+.btn{
+    /*aspetto*/
+    width: 100px;
+    height: 48px;
+    border: black solid 1px;
+    /*posizione*/
+    display: inline-block;
+    margin-top: auto;
+    margin-left: 2%;
+     /*caratteristiche*/
+     font-size: 70%;
+     word-break:normal;
+     text-align: center;
+
+}
+/* fine barra in alto */
+
+
+
+
+
+
+
+
+/* inizio progetto william */
+
+.quadrato_grande{
+    margin-top: 50px;
+}
+
+.titolo{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+
+.inserisci_ingredienti{
+    border: solid black 1px;
+    width: 500px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+.rettangolo_inserisci_ingredienti{
+ 
+    width: 650px;
+    height: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 20px
+}
+
+.quadrato_tipi{
+    width: 650px;
+    height: 260px;
+    text-align: center;
+}
+
+
+.nome_ingrediente{
+    width: 200px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26px
+}
+
+.marca_del_prodotto{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.peso{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.costo{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.myButton{
+    width: 150px;
+    height: 25px;
+    background-color: limegreen;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myButton:hover {
+    background-color: yellow;
+
+}
+
+.myButton:active {
+	position:relative;
+}

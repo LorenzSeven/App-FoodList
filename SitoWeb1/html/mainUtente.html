@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/SitoWeb1/css/mainStylesNuovo.css">
+
+  <title>Main page</title>
+</head>
+
+<body>
+ <input type="checkbox" id="check">
+ <div class="top-bar">
+
+   <div class="header">
+
+    <div id="logoContainer">
+
+      <a href="/SitoWeb1/html/mainUtente.html"> 
+        <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+      </a>
+
+    </div>
+
+    <input type="text" id="searchBar" onkeyup="barraRicerca()" placeholder="Cerca...">
+
+    <ul id="lista">
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_margherita()"> pizza margherita </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_lasagne()"> lasagne alla Bolognese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_risotto()"> risotto alla Milanese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_spaghetti()"> spaghetti alla Carbonara </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tiramisù()"> tiramisù </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tagliatelle()"> tagliatelle al ragù </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_parmigiana()"> parmigiana di melanzane </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_marinara()"> pizza marinara </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_gnocchi()"> gnocchi alla sorrentina </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_ossobuchi()"> ossobuchi alla Milanese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_sacher()"> torta sacher </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_arancini()"> arancini di riso </a>  </li>
+    <br>
+    </ul>
+
+     <div class="header-right">
+       <a class="topA" href="/SitoWeb1/html/login.html">LOGIN</a>
+       <a class="topA" href="/SitoWeb1/html/carrello.html">CARRELLO</a>
+       <a class="topA" href="/SitoWeb1/html/preferiti.html">PREFERITI ❤️</a>
+    </div>
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+  </div>
+  </label>
+  </div> 
+<br>
+<br>
+<br>
+
+<div id="loadingIcon"></div>
+
+<div class="sfondo">
+
+    <div id="box">
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_margherita()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/pizza_margherita_main_utente.png"></div>Pizza Margherita</div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_lasagne()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/lasagne_alla_bolognese_main_utente.png"></div> Lasagne alla Bolognese</div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_risotto()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/risotto_alla_milanese_main_utente.png"></div> Risotto alla Milanese</div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_spaghetti()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/spaghetti_alla_carbonara_main_utente.png"></div> Spaghetti alla Carbonara</div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tiramisù()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/tiramisù_main_utente.png"></div> Tiramisù </div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tagliatelle()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/tagliatelle_al_ragù_main_utente.png"></div> Tagliatelle al Ragù</div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_parmigiana()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/parmigiana_di_melanzane_main_utente.png"></div> Parmigiana di Melanzane</div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_marinara()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/pizza_marinara_main_utente_png.jpg"></div> Pizza Marinara </div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_gnocchi()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/gnocchi_alla_sorrentina_main_utente.png"></div> Gnocchi alla Sorrentina</div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_ossobuchi()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/ossobuco_alla_milanese_main_utente.png"></div> Ossobuchi alla Milanese</div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_sacher()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/sacher_main_utente.png"></div> Sacher </div></a>
+        <a class="linkRicetta" href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_arancini()"><div class="riquadriRicette"><div class="riquadroImmagine"><img class="immaginiRicette" src="/SitoWeb1/immagini/arancini_siciliani_main_utente.png"></div> Arancini di Riso </div></a>
+    </div>
+</div>
+
+<div id="bottomRow">
+    <div class="btn"></div>
+    <div class="btn"></div>
+    <div class="btn"></div>
+    <div class="btn"></div>
+
+</div>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/SitoWeb1/javascript/main.js"></script>
+</body>
+
+</html>

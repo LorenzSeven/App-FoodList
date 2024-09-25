@@ -1,0 +1,27 @@
+// JSON OBJECT --> Utente
+{
+	"id": "1",
+	"nomeUtente": "nomeutente",
+	"email": "EmailUtente",
+	"password": "PasswordUtente",
+	"puntivendita": [ 
+		{
+		"id": "1",
+    	"indirizzo": "via…",
+    	"orari": "orario",
+    	"idUtente": "aziendale(che gestisce i punti vendita)"
+		},
+		{
+			"id": "2",
+   			 "indirizzo": "via…",
+   			 "orari": "orario",
+   			 "idUtente": "aziendale(che gestisce i punti vendita)"
+		},
+		{
+			"id": "3",
+   			"indirizzo": "via…",
+  			"orari": "orario",
+    		"idUtente": "aziendale(che gestisce i punti vendita)"
+		}
+	]
+}

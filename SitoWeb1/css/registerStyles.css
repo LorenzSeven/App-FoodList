@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #FFFFF0;
+    height: 500px;
+    overflow: hidden;
+}
+
+h1{
+    /*aspetto*/
+    width: 100%;
+    height: 50px;
+    color: black;
+    /*posizione*/
+    margin:auto;
+    text-align: center;
+}
+
+h3{
+    width: 100%;
+    height: 20px;
+    /*posizione*/
+    margin: auto;
+    text-align: center;
+    font-size:x-large;
+    color: #59A52C;
+}
+
+h5{
+    width: 100%;
+    height: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+a{
+    width: 100%;
+    height: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    /*caratteristiche*/
+    text-decoration: none;
+}
+
+.linkButton{
+        /*aspetto*/
+        width: 100px;
+        height: 30px;
+        border: black solid;
+        /*posizione*/
+        display: inline-block;
+        position: relative;
+        top: 25%;
+        margin-left: 2%;
+         /*caratteristiche*/
+         font-size: 70%;
+         word-break:normal;
+         text-align: center;
+}
+
+.linkButton:hover{
+    background-color: gray;
+}
+
+#scatolozzaMailRegister{
+    /*aspetto*/
+    height: 450px;
+    width: 400px;
+    border: black solid;
+    /*posizione*/
+    margin:auto;
+    padding: 0;
+    /*caratteristiche*/
+    border-radius: 8%;
+    text-align: center;
+}
+
+.submit{
+    width: 270px;
+    display: block;
+}
+
+
+#formUtente {
+    /*aspetto*/
+    height: 40px;
+    width: 270px;
+    display: block;
+    /*posizione*/
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 65px;
+    position: absolute;
+}
+
+#formAzienda{
+    /*aspetto*/
+    height: 30px;
+    width: 270px;
+    display: none;
+    /*posizione*/
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 65px;
+}
+
+#registerButton{
+    width: 340px;
+    height: 30px;
+    /*posizione*/
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.btn{
+    /*aspetto*/
+    width: 100px;
+    height: 48px;
+    border: black solid 1px;
+    /*posizione*/
+    display: inline-block;
+    margin-top: auto;
+    margin-left: 2%;
+     /*caratteristiche*/
+     font-size: 70%;
+     word-break:normal;
+     text-align: center;
+}
+
+#immagine{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    z-index: -10;
+}
+
+#logoContainer{
+    display: block;
+    margin: auto;
+    height: 80px;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  #logo{
+    width: 100%;
+    height: 100%;
+  }
+
+
+.utenteLabel {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    right: 65px;
+} 
+
+.aziendaLabel {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+} 

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activity.utenteConsumer.DescrizionePiattoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:src="@drawable/ic_arrow_back" />
+
+        <EditText
+            android:id="@+id/editTextSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="99"
+            android:background="@drawable/border_black"
+            android:drawableStart="@drawable/ic_search_bar"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:hint="Ricerca Food List"
+            android:inputType="text"
+            android:paddingHorizontal="2.5dp"
+            android:paddingVertical="8dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayoutTopBar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_nome_ricetta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nome Ricetta"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/button_aggiungi_ai_preferiti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#D8F8DA"
+                    android:text="Aggiungi ai preferiti ❤"
+                    android:textColor="#000000"
+                    tools:cornerRadius="10dp" />
+
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edge"
+                        android:elevation="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageview_foto_ricetta"
+                            android:layout_width="350dp"
+                            android:layout_height="250dp"
+                            android:background="@drawable/rounded_edge"
+                            android:backgroundTint="#FFFFFF"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@android:drawable/ic_menu_gallery" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black__radius_bottom_left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tipo_piatto"
+                                android:layout_width="60dp"
+                                android:layout_height="20dp"
+                                android:text="Tipo:"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textview_tipo_piatto"
+                                android:layout_width="60dp"
+                                android:layout_height="20dp"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/image_border"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/nazionalità"
+                                android:layout_width="80dp"
+                                android:layout_height="20dp"
+                                android:text="Nazionalità:"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textview_nazionalità"
+                                android:layout_width="80dp"
+                                android:layout_height="20dp"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/image_border"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tempo_preparazione"
+                                android:layout_width="140dp"
+                                android:layout_height="20dp"
+                                android:text="Tempo preparazione:"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textview_tempo_preparazione"
+                                android:layout_width="140dp"
+                                android:layout_height="20dp"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black__radius_bottom_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/difficoltà"
+                                android:layout_width="70dp"
+                                android:layout_height="20dp"
+                                android:text="Difficoltà:"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textview_difficoltà"
+                                android:layout_width="70dp"
+                                android:layout_height="20dp"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Lista Ingredienti"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TableRow
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_black"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listview_ingredienti"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:scrollbars="none" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/button_aggiungi_al_carrello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#D8F8DA"
+                android:text="Aggiungi al carrello"
+                android:textColor="#000000"
+                tools:cornerRadius="10dp" />
+
+            <TextView
+                android:id="@+id/Descrizione_titolo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Descrizione"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TableRow
+                android:id="@+id/Frame_Contenitore_preparazione"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="70dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/Elenco_step"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_black"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/descrizione"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Preparazione \n \n 1°Step \n ... \n 2°Step \n ... \n 3°Step \n ... \n \n Intolleranze \n ... \n \n Conservazione \n ..."
+                        android:textAlignment="textStart"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu_consumer" />
+</RelativeLayout>
+

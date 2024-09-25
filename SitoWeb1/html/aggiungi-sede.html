@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/css/mainStylesNuovo.css">
+  <link rel="stylesheet" href="/Sitoweb1/css/mainStylesNuovo.css">
+  <link rel="stylesheet" href="/SitoWeb1/css/aggiungi_sede.css">
+  <link rel="stylesheet" href="/css/aggiungi_sede.css">
+  <!--Senza nel PC Luca not work-->
+</head>
+<input type="checkbox" id="check">
+<div class="top-bar">
+
+  <div class="header">
+
+    <div id="logoContainer">
+
+      <a href="/SitoWeb1/html/mainAziendale.html">
+        <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+      </a>
+
+    </div>
+
+    <input type="text" id="searchBar" onkeyup="barraRicerca()" placeholder="Cerca...">
+
+    <ul id="lista">
+      <li><a href="/SitoWeb1/html/ricette/lasagne.html">Lasagne</a></li>
+      <br>
+      <li><a href="/SitoWeb1/html/ricette/spaghettiScoglio.html">Spaghetti allo scoglio</a></li>
+      <br>
+      <li><a href="/SitoWeb1/html/ricette/tiramisù.html"> tiramisù</a></li>
+      <br>
+      <li><a href="#"> Parmigiana di melanzane</a></li>
+      <br>
+      <li><a href="#">Calvin</a></li>
+      <br>
+    </ul>
+
+    <div class="header-right">
+      <a class="topA" href="/SitoWeb1/html/mainAziendale.html"> PAGINA PRINCIPALE 🏪</a>
+    </div>
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+  </div>
+  </label>
+</div>
+
+
+<body>
+
+  <div class="titolo">
+    <h1>Aggiungi Sede</h1>
+  </div>
+
+  <form>
+    <div class="container">
+      <p>NOME DELLA SEDE
+      <p>
+        <input type="text" name="nome" id="nome" placeholder="">
+
+
+      <p>VIA DELLA SEDE
+      <p>
+        <input type="text" name="indirizzo" id="indirizzo" placeholder="">
+
+      <p>ORARIO</p>
+      <p class="orario">Lun-Sab</p>
+      <input  type="text" name="orario-lun-sab" id="orario1" placeholder="">
+      <p class="orairo">Dom</p>
+      <input  type="text" name="orario-domenica" id="orario2" placeholder="">
+
+
+      <p>NUMERO CELLULARE</p>
+      <input type="text">
+
+    </div>
+
+    <button type="submit" class="btn-css">aggiungi</button>
+
+  </form>
+
+</body>
+
+</html>

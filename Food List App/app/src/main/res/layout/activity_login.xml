@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sfondoLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.utenteConsumer.LoginActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sfondo_home_green" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/mini_logo" />
+
+        <TextView
+            android:id="@+id/ACCESSO"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="30dp"
+            android:text="ACCEDI"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+            android:hint="inserisci email"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:hint="inserisci password"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+            android:enabled="true"
+            android:text="login"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="non sei ancora iscritto?"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+             android:id="@+id/registerUtente"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+
+             android:enabled="true"
+             android:text="ISCRIVITI!"
+             android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</FrameLayout>

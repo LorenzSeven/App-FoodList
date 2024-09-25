@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Link stylesheet icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="headerBar.css">
+
+  <title>Main page</title>
+</head>
+
+<body>
+
+  <!--Inizio top bar -->
+  <input type="checkbox" id="check">
+  <div class="top-bar">
+    <div class="header">
+      <div class="logo_bar_mobile">
+        <a href="#default" class="logo">
+        </a>
+        <i class="fa fa-bars checkbtn-logo"></i>
+      </div>
+      <div class="search">
+        <input type="text" id="search-bar" onkeyup="barraRicerca()" placeholder="Cerca...">
+        <i class="fa fa-search" aria-hidden="true" style=></i>
+      </div>
+
+      <div class="header-right">
+        <a class="active" href="#home">
+          <i class="fa fa-user-circle-o" aria-hidden="true">
+            <p class="text-icon-header">
+              Login
+            </p>
+          </i>
+        </a>
+        <a href="#contact">
+          <i class="fa fa-shopping-cart " aria-hidden="true">
+            <p class="text-icon-header">
+              Carrello
+            </p>
+          </i>
+        </a>
+        <a href="#about">
+          <i class="fa fa-heart" aria-hidden="true">
+            <p class="text-icon-header">
+              Preferiti
+
+            </p>
+          </i>
+        </a>
+        <a href="#about">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          <p class="text-icon-header">
+            About
+          </p>
+        </a>
+      </div>
+
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+    </div>
+  </div>
+
+  <!--Fine top bar -->
+
+
+
+  <footer> footer</footer>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/SitoWeb1/javascript/main.js"></script>
+  <script src="/SitoWeb1/javascript/cercaNegozio.js"></script>
+
+  <script src="/SitoWeb1/test/header-bar.js"></script>
+
+</body>
+
+</html>

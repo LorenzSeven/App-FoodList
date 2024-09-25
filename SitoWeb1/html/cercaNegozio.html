@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--API FREE DEMO -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.2.2/ol.css">
+
+  <!--API FREE DEMO -->
+
+  <!--API Google -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSJYNrcm5n2KSs74hdLuCiPAC69I4swrc&callback=initMap"
+    async defer></script>
+  <!--API Google -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Header -->
+  <link rel="stylesheet" href="/Sitoweb1/css/mainStylesNuovo.css">
+
+  <link rel="stylesheet" href="/SitoWeb1/css/cercaNegozio.css">
+
+  <title>Cerca negozio</title>
+</head>
+
+<body>
+  <input type="checkbox" id="check">
+  <div class="top-bar">
+
+    <div class="header">
+
+      <div id="logoContainer">
+
+        <a href="/SitoWeb1/html/mainUtente.html">
+          <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+        </a>
+
+      </div>
+
+      <input type="text" id="searchBar" onkeyup="barraRicerca()" placeholder="Cerca...">
+
+      <ul id="lista">
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_margherita()"> pizza margherita </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_lasagne()"> lasagne alla Bolognese </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_risotto()"> risotto alla Milanese </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_spaghetti()"> spaghetti alla Carbonara </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tiramisù()"> tiramisù </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tagliatelle()"> tagliatelle al ragù </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_parmigiana()"> parmigiana di melanzane </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_marinara()"> pizza marinara </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_gnocchi()"> gnocchi alla sorrentina </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_ossobuchi()"> ossobuchi alla Milanese </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_sacher()"> torta sacher </a>  </li>
+      <br>
+      <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_arancini()"> arancini di riso </a>  </li>
+      <br>
+      </ul>
+
+
+      <div class="header-right">
+        <a class="topA" href="/SitoWeb1/html/login.html">LOGIN</a>
+        <a class="topA" href="/SitoWeb1/html/carrello.html">CARRELLO</a>
+        <a class="topA" href="/SitoWeb1/html/preferiti.html">PREFERITI ❤️</a>
+      </div>
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+    </div>
+    </label>
+  </div>
+
+  <div class="ricerca">
+    <h1 class="titolo-pagina">Negozi nella tua zona</h1>
+    <section id="lista-negozio">
+   <!---   <div class="negozio" id="negozio-1">
+        <div class="info-negozio">
+          <div class="dati-negozio ">
+            <div class="titolo">
+              <h1 class="nome-negozio">Esselunga SuperMega </h1>
+            </div>
+
+            <h4 class="indirizzo">Via Mario Washington, 53, 20146 Milano MI</h4>
+            <div class="info-orario-distanza">
+              <h7 class="orario"><b>orari apertura/chiusura</b></h7>
+              <p class="orario">Lun-Sab: 10:00-14:00<br> Dom: 9:00-19:00</p>
+
+              <p class="distanza"> <b>distanza:</b> 10 km</p>
+            </div>
+
+          </div>
+          <div class="img-spazio">
+            <div class="img-negozio" style="background-image: url(/SitoWeb1/immagini/esselunga_prova.jpg)">
+
+            </div>
+          </div>
+
+          <div class="mappa">
+            <div id="map-1"></div>
+          </div>
+        </div>
+
+        <div class="barra-costo">
+          <div class="totale-spesa">
+            <p><b>Costo Spesa:</b> 100€ </p>
+            <p></p>
+            <p></p>
+            <p><b> Lista:</b> 10 / 10 ing.</p>
+          </div>
+        </div>
+       </div>-->
+
+    </section>
+
+  </div>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/SitoWeb1/javascript/main.js"></script>
+  <script src="/Sitoweb1/javascript/cercaNegozio.js"></script>
+  <!--Script API free JS-->
+
+  <!--Script API free JS-->
+</body>
+
+</html>

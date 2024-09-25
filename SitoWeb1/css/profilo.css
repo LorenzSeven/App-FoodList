@@ -1,0 +1,85 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tutto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.azienda-h1{
+    margin-bottom: -20px;
+}
+
+.profilo {
+    padding-top: 40px;
+    height: 500px;
+    width: 400px;
+    box-shadow: 2px 2px 10px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+p {
+    margin: 2px;
+}
+
+.info-profilo {
+    width: 50%;
+    margin-bottom: 10vh;
+
+}
+
+.p-iva,
+.sede-legale,
+.brand,
+.username,
+.password,
+.email {
+    font-weight: bold;
+}
+
+img {
+    height: 30%;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+/* ------------- Condizioni quando lo schermo cambia dimensione ------------- */
+
+/* -------- Quando lo schermo è minore di 900px fa questa condizione -------- */
+@media screen and (max-width: 900px) {
+    .info {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        margin: 2px;
+    }
+
+    .password {
+        margin-right: 0px;
+    }
+
+    .username {
+        margin-right: 1px;
+    }
+}

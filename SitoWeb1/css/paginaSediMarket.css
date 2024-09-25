@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #FFFFF0;
+}
+
+h1{
+    /*aspetto*/
+    width: 100%;
+    height: 50px;
+    color: black;
+    /*posizione*/
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+a{
+    width: 100%;
+    height: 20px;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    /*caratteristiche*/
+    text-decoration: none;
+    color: black;
+}
+
+.linkButton{
+        /*aspetto*/
+        width: 100px;
+        height: 30px;
+        border: black solid;
+        /*posizione*/
+        display: inline-block;
+        position: relative;
+        top: 25%;
+        margin-left: 2%;
+         /*caratteristiche*/
+         font-size: 70%;
+         word-break:normal;
+         text-align: center;
+}
+
+.linkButton:hover{
+    background-color: gray;
+}
+
+
+.topBar{
+    /*aspetto*/
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 77, 0);
+    background-image: linear-gradient(red,rgb(255, 154, 3));
+    /*posizione*/
+    display: inline-block;
+    padding: 0%;
+}
+
+#logoContainer{
+    /*aspetto*/
+    width: 150px;
+    height: 50px;
+    border:  linear-gradient(red,rgb(255, 205, 3));
+    background-color: rgb(255, 77, 0);
+    background-image:  linear-gradient(red,rgb(255, 154, 3));
+    /*posizione*/
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#logo{
+    /*aspetto*/
+    width: 50px;
+    height: 30px;
+    border: black solid 1px;
+    border-radius: 50%;
+    background-image: url("logo.webp");
+    /*posizione*/
+    vertical-align: middle;   
+}
+
+#scrittaLogo{
+    display: inline-block;
+}
+
+#searchBar {
+    /*aspetto*/
+    background-image: url('/css/searchicon.png');
+    height: 20px;
+    width: 300px;
+    /*posizione*/
+    margin-left: 300px;
+    /*caratteristiche*/
+    font-size: 16px;
+    padding: 5px 10px 5px 20px;
+    border: white solid 1px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+  }
+  
+  #searchBar:hover{
+    border: black solid 1px;
+  }
+
+  #lista {
+    /*aspetto*/
+    height: 20px;
+    width: 317px;
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    color: black;
+    /*posizione*/
+    margin-left: 467px;
+    margin-top: -11px;
+    padding: 6px;
+    /*caratteristiche*/
+    text-decoration: none;
+    font-size: 14px;
+    position: absolute;
+    height: fit-content;
+    list-style: none;
+    visibility: hidden;
+  }
+  
+  #myUL li a:hover:not(.header) {
+    color: red;
+  }
+
+#barButton1{
+    /*aspetto*/
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 77, 0);
+    background-image:  linear-gradient(red,rgb(255, 154, 3));
+    /*posizione*/
+    margin-top: 0;
+    margin-left: 100px;
+    /*caratteristiche*/
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px; 
+}
+
+#barButton2{
+    /*aspetto*/
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 77, 0);
+    background-image:  linear-gradient(red,rgb(255, 154, 3));
+    /*posizione*/
+    margin-top: 0;
+    margin-left: 20px;
+    /*caratteristiche*/
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px; 
+}
+
+
+#barButton1:hover{
+    color: white;
+}
+
+#barButton2:hover{
+    color: white;
+}
+
+
+#smallBar{
+    /*aspetto*/
+    height: 31px;
+    width: 100%;
+    background-color: rgb(255, 205, 3);
+    background-image: linear-gradient(rgb(255, 154, 3),rgb(255, 205, 3));
+    /*posizione*/
+    margin: 0%;
+    padding: 0%;
+    /*caratteristiche*/
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    
+}
+
+.smallbarButton{
+    /*aspetto*/
+    width: 120px;
+    height: 30px;
+    background-color: rgb(255, 205, 3);
+    background-image: linear-gradient(rgb(255, 154, 3),rgb(255, 205, 3));
+    /*posizione*/
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 1px;
+    margin-bottom: 15px;
+    /*caratteristiche*/
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.smallbarButton:hover{
+    color: white;
+}
+
+#preferiti{
+    /*aspetto*/
+    width: 120px;
+    height: 30px;
+    background-color: rgb(255, 205, 3);
+    background-image: linear-gradient(rgb(255, 154, 3),rgb(255, 205, 3));
+    /*posizione*/
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: 1px;
+    margin-bottom: 15px;
+    /*caratteristiche*/
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+#preferiti:hover{
+    color: white;
+}
+
+#hamburger{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 205, 3);
+    background-image: linear-gradient(rgb(255, 154, 3),rgb(255, 205, 3));;
+    /*posizione*/
+    text-align: center;
+    display: inline-block;
+    line-height: 35px;
+    font-size: 30px;
+}
+
+#hamburger:hover{
+    color: white;
+}
+
+#menuTendina{
+    /*aspetto*/
+    height: 500px;
+    width: 300px;
+    background-color: gray;
+    display: inline-block;
+    visibility: hidden;
+    /*posizione*/
+    position: fixed;
+    /*caratteristiche*/
+    border-right: black solid 1px;
+}
+
+
+.sfondo{
+    /*aspetto*/
+    height: 1000px;
+    /*posizione*/
+    display: inline-block;
+    margin-top:20px;
+    /*caratteristiche*/
+    text-align: center;
+}
+
+.riquadriRicette{
+    /*aspetto*/
+    height: 220px;
+    width: 240px;
+    border: black solid;
+    background-color: gray;
+    border-radius: 20px;
+    /*posizione*/
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.riquadriRicette:hover{
+    background-color: red;
+}
+
+#bottomRow{
+    height: 50px;
+    background-color: gray;
+    display: inline-block;
+    margin:0;
+    padding: 0;
+}    
+    
+.btn{
+    /*aspetto*/
+    width: 100px;
+    height: 48px;
+    border: black solid 1px;
+    /*posizione*/
+    display: inline-block;
+    margin-top: auto;
+    margin-left: 2%;
+     /*caratteristiche*/
+     font-size: 70%;
+     word-break:normal;
+     text-align: center;
+}
+
+ #corpo{
+width: 2500px;
+height: 1000px;
+background-color: aqua;
+border: solid black 1px;
+}
+
+#AGGIUNGISEDE{
+width: 400px;
+height: 50px;
+left: 500px;
+position: absolute;
+background-color: rgb(255, 154, 3);
+}
+
+#RETSEDE{
+    width: 850px;
+    height: 950px;
+    left: 300px;
+    background-color: rgb(219, 234, 10);
+    border: solid black 1px;
+    position: absolute;
+    top: 150px;
+}
+
+h1{
+    font-family: 'Golos Text', sans-serif;
+}
+
+#NOMESEDE{
+    width: 400px;
+    height: 50px;
+    top: 50px;
+    left: 300px;
+    position:absolute;
+    background-color: rgb(255, 154, 3);
+}
+#VIASEDE{
+    width: 400px;
+    height: 50px;
+    top: 30px;
+    left: 300px;
+    position:absolute;
+    background-color: rgb(255, 154, 3);
+}
+#CITTAREGIONESEDE{}
+
+

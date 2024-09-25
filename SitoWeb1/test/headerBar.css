@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+
+}
+
+.header {
+
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 2vh 20px;
+
+  border: 2px solid black;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 80%;
+  line-height: 2vh;
+  border-radius: 4px;
+
+
+
+}
+
+.header a.logo {
+  background: url(/SitoWeb1/immagini/mini_logo.png) no-repeat 0% center;
+  width: 205px;
+  height: 50px;
+  display: block;
+  padding: 0;
+
+  border: 2px solid black;
+
+
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  border: 2px solid black;
+  border-radius: 8px;
+
+  width: 30vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+/* ------------------------- icone del header destro ------------------------ */
+p.text-icon-header{
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------------- Mobile setting top bar ------------------------- */
+.logo_bar_mobile {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+}
+
+.checkbtn-logo {
+  visibility: hidden;
+}
+
+/* ------------- Condizioni quando lo schermo cambia dimensione ------------- */
+/* -------- Quando lo schermo è minore di 900px fa questa condizione -------- */
+@media screen and (max-width: 999px) {
+  p.text-icon-header{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
+}
+/* ----- Quando lo schermo raggiunge 750 px allora fa questa condizione ----- */
+@media  screen and (max-width: 750px) {
+  .header-right{
+    display: none;
+  }
+}
+
+/* ----- Quando lo schermo è minore di 580px allora fa quest condizione ----- */
+@media screen and (max-width: 580px) {
+
+  .header {
+    flex-direction: column;
+  }
+
+  .checkbtn {
+    display: none;
+  }
+
+  .checkbtn-logo {
+    font-size: 30px;
+    color: rebeccapurple;
+    margin-right: 10%;
+    visibility: visible;
+  }
+
+
+  .logo_bar_mobile {
+    margin-bottom: 1%;
+  }
+
+
+
+
+}
+
+/* ------- Quando lo schermo è maggiore di 900px fa questa condizione ------- */
+@media screen and (min-width: 751px) {
+
+  .checkbtn,
+  .checkbtn-logo {
+    display: none;
+  }
+
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rebeccapurple;
+
+}
+
+#check {
+  display: none;
+
+}
+
+.search {
+  display: flex;
+}
+
+.fa-search {
+  align-self: center;
+
+  padding: 0.5rem;
+  border-right: rgb(0, 251, 21) solid 2px;
+  border-top: rgb(0, 251, 21) solid 2px;
+  border-bottom: rgb(0, 251, 21) solid 2px;
+  border-left: #fff;
+
+  background-color: darkgreen;
+  color: white;
+
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#search-bar {
+
+  /*caratteristiche*/
+  font-size: 16px;
+  padding: 5px 10px 5px 20px;
+
+  border-left: rgb(0, 251, 21) solid 2px;
+  border-top: rgb(0, 251, 21) solid 2px;
+  border-bottom: rgb(0, 251, 21) solid 2px;
+  border-right: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+footer {
+  background-color: green;
+  color: white;
+
+  text-align: center;
+
+  border: 3px rgb(35, 0, 234) solid;
+
+  margin-top: 20px;
+
+}

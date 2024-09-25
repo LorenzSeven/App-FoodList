@@ -1,0 +1,156 @@
+<!-- top bar --> 
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="/SitoWeb1/css/visualizza_ingredienti_azienda.css">
+    <title>visualizza gli ingredienti dell'azienda:</title>
+  </head>
+  <body>
+   
+    <div class="top-bar">
+
+      <div class="header">
+   
+       <div id="logoContainer">
+   
+         <a href="/SitoWeb1/html/mainUtente.html"> 
+           <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+         </a>
+   
+       </div>
+   
+       <input type="text" id="searchBar" onkeyup="barraRicerca()" placeholder="Cerca...">
+
+    <ul id="lista">
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_margherita()"> pizza margherita </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_lasagne()"> lasagne alla Bolognese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_risotto()"> risotto alla Milanese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_spaghetti()"> spaghetti alla Carbonara </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tiramisù()"> tiramisù </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tagliatelle()"> tagliatelle al ragù </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_parmigiana()"> parmigiana di melanzane </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_marinara()"> pizza marinara </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_gnocchi()"> gnocchi alla sorrentina </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_ossobuchi()"> ossobuchi alla Milanese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_sacher()"> torta sacher </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_arancini()"> arancini di riso </a>  </li>
+    <br>
+    </ul>
+   
+        <div class="header-right">
+          <a class="topA" href="/SitoWeb1/html/login.html">LOGIN</a>
+          <a class="topA" href="/SitoWeb1/html/carrello.html">CARRELLO</a>
+          <a class="topA" href="/SitoWeb1/html/preferiti.html">PREFERITI ❤️</a>
+       </div>
+       <label for="check" class="checkbtn">
+         <i class="fa fa-bars"></i>
+     </div>
+     </label>
+     </div> 
+<!-- fine top bar-->
+
+<!-- inizio esercizio william-->
+
+<div class="contenitore_negozio">
+    <div class="rettangolo_spesa">
+          
+      <div class="piccolo_rettangolo">
+          <img class="foto" src="/SitoWeb1/immagini/immagine_esselunga.png">
+          <div class="titolo_negozio">ESSELUNGA:<br>
+          <div class="via_negozio"> Via dei Missaglia n.45<br></div> 
+          <div class="tabella"
+          table>
+            <tr>
+              <td><b>Lunedi:</b><td>9.00/21.00</td></td>
+              <td><b>Martedì:</b><td>9.00/21.00</td></td></td>
+            </tr>
+            <tr>
+              <td><b>Mercoledì:</b><td>9.00/21.00</td></td></td>
+              <td><b>Giovedì:</b><td>9.00/21.00</td></td></td>
+              
+            </tr>
+            <tr>
+              <td><b>Venerdì:</b><td>9.00/21.00</td></td></td>
+              <td><b>Sabato:</b><td>9.00/21.00</td></td></td>
+            </tr>
+            <tr>
+              <td><b>Domenica:</b><td>Chiuso</td></td></td>
+            </tr> 
+            </table>
+           <a href="aggiungiIngredienti.html"><div button class="myButton">Inserisci l'Ingrediente:</button></a>
+          </div>
+          </div>
+        </div>
+    
+        </div>
+      </div>
+      <div class="contenitore_elenco_ingredienti">
+        <table>
+          <tr>
+            <th>Nome:</th>
+            <th>Marca:</th>
+            <th>Peso:</th>
+            <th>Costo:</th>
+          </tr>
+          
+          <tr>
+          <td>Linguine</td>
+          <td>Barilla</td>
+          <td>500g</td>
+          <td>1,49€</td>
+          </tr>
+
+          <tr>
+            <td>Polpa Mutti </td>
+            <td>Mutti</td>
+            <td>1 litro</td>
+            <td>2,49€</td>
+            </tr>
+
+            <tr>
+              <td>Capperi sott'olio</td>
+              <td>delizie del sole</td>
+              <td>200g peso sgocciolato</td>
+              <td>1,29€</td>
+              </tr>
+
+              <tr>
+                <td>farina 00 </td>
+                <td>mulino chiavazza</td>
+                <td>1 Kilo</td>
+                <td>1,09€</td>
+                </tr>
+
+                <tr>
+                  <td>latte scremato</td>
+                  <td>Granarolo</td>
+                  <td>1 Litro</td>
+                  <td>1,,59€</td>
+                  </tr>
+
+                  <tr>
+                    <td>Pan Bauletto</td>
+                    <td>Mulino Bianco</td>
+                    <td>500g</td>
+                    <td>1,00€</td>
+                    </tr>
+        </table>
+
+      </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="/SitoWeb1/javascript/main.js"></script>
+</body>

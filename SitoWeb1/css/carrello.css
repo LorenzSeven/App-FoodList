@@ -1,0 +1,358 @@
+
+/* css.barra in alto */
+* {box-sizing: border-box;}
+
+body{
+    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/SitoWeb1/immagini/sfondoMainNuovo.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+    /*aspetto*/
+    width: 100%;
+    height: 50px;
+    color: black;
+    /*posizione*/
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+a{
+    /*caratteristiche*/
+    text-decoration: none;
+}
+
+.linkButton{
+        /*aspetto*/
+        width: 100px;
+        height: 30px;
+        border: black solid;
+        /*posizione*/
+        display: inline-block;
+        position: relative;
+        top: 25%;
+        margin-left: 2%;
+         /*caratteristiche*/
+         font-size: 70%;
+         word-break:normal;
+         text-align: center;
+}
+
+.linkButton:hover{
+    background-color: gray;
+}
+
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header {
+  height: 90px;
+  overflow: hidden;
+  /*background-image: linear-gradient( red,rgb(191, 72, 72)); */
+  background-color: white;
+  border-bottom: #59A52C solid 2px;
+  padding: 20px 20px;
+    
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0px 0px 10px 0px #59A52C;
+}
+
+.topA {
+  float: left;
+  background-color: white;
+  color:#59A52C;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 35px;
+  
+}
+
+
+.header a:active {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a:hover {
+  color:#8deb57;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+}
+
+.header-right {
+  float: right;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .header-right{
+    display: none;
+  }
+
+}
+@media screen and (min-width: 900px){
+    .checkbtn{
+        display: none;
+    }
+  
+    
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: rebeccapurple;
+    
+    
+}
+
+#check{
+    display: none;
+
+}
+
+#logoContainer{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+  
+#logo{
+    width: 100%;
+    height: 100%;
+}
+  
+#searchBar {
+    /*aspetto*/
+    height: 45px;
+    width: 300px;
+    border-radius: 20px;
+    /*caratteristiche*/
+    font-size: 16px;
+    padding: 5px 10px 5px 20px;
+    border: black solid 2px;
+    color: #59A52C;
+}
+
+/*AGGIUNTE*/
+
+
+#lista {
+  /*aspetto*/
+  height: 20px;
+  width: 200px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  /*posizione*/
+  position: absolute;
+  top: 53px;
+  left: 37%;
+  padding: 6px;
+  /*caratteristiche*/
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute;
+  height: fit-content;
+  width: max-content;
+  list-style: none;
+  visibility: hidden;
+}
+
+#myUL li a:hover:not(.header) {
+  color: red;
+}
+
+
+.sfondo{
+    /*aspetto*/
+    height: 1000px;
+    /*posizione*/
+    display: inline-block;
+    margin-top:100px;
+    /*caratteristiche*/
+    text-align: center;
+}
+
+.riquadriRicette{
+    /*aspetto*/
+    height: 220px;
+    width: 240px;
+    border: black solid;
+    background-color: gray;
+    border-radius: 20px;
+    /*posizione*/
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.riquadriRicette:hover{
+    background-color: red;
+}
+
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px;
+    color: black;
+    display: block; /* Make it into a block element to fill the whole list */
+}
+  
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+
+#bottomRow{
+    height: 50px;
+    background-color: gray;
+    display: inline-block;
+    margin:0;
+    padding: 0;
+}    
+    
+.btn{
+    /*aspetto*/
+    width: 100px;
+    height: 48px;
+    border: black solid 1px;
+    /*posizione*/
+    display: inline-block;
+    margin-top: auto;
+    margin-left: 2%;
+     /*caratteristiche*/
+     font-size: 70%;
+     word-break:normal;
+     text-align: center;
+
+}
+/* fine barra in alto */
+
+
+
+/* inizio progetto william */
+.contenitore2{
+    width: 650px;
+    height: 400px;
+    margin-left: 10px;
+    margin-top: 50px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.checkbox_titolo_ricetta{
+    
+    border-radius: 0.15em;
+    height: 30px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.titolodellaricetta1{
+    vertical-align: super;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight:bolder;
+}
+
+.checkbox_ingredienti{
+    border-radius: 0.15em;
+    height: 20px;
+    width: 20px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.titolo_degli_ingredienti{
+    vertical-align: super;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+.contenitore_cercanegozio{
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 200px;
+    display: inline-block;
+}
+
+.barra_di_ricerca{
+    font-style: italic;
+    font-size: medium;
+    border-radius: 20px;
+    border: solid black 2px;
+    padding: 5px 20px 5px 15px;
+    width: 296px;
+    height: 30px;
+}
+
+
+.myButton {
+	box-shadow:inset -3px 50px 0px 0px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius: 18px;
+	border:10px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:21px;
+	font-weight:bold;
+	padding:14px 10px;
+	text-decoration:none;
+	text-shadow:1px -1px 6px #2f6627;
+    display: table;
+    width: 70%;
+    height: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.myButton:hover {
+	color: yellow;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

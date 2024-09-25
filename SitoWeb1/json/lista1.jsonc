@@ -1,0 +1,69 @@
+//*JSON OBJECT: --> Utente Azienda
+{
+    "id": "1",
+    "email": "email",
+    "password": "password",
+    "idAzienda": "IdAzienda"
+}
+//*JSON Object --> Orario
+{
+    "id": "id",
+    "lunedì": [
+        "orarioStart",
+        "OrarioEnd"
+    ],
+    "martedì": [
+        "orarioStart",
+        "OrarioEnd"
+    ],
+    "mercoledì": [
+        "orarioStart",
+        "OrarioEnd"
+    ],
+    "giovedì": [
+        "orarioStart",
+        "OrarioEnd"
+    ],
+    "venerdì": [
+        "orarioStart",
+        "OrarioEnd"
+    ],
+    "sabato": [
+        "orarioStart",
+        "OrarioEnd"
+    ],
+    "domenica": [
+        "Chiuso"
+    ]
+}
+//*JSON Object --> Punti Vendita
+{
+    "id": "1",
+    "indirizzo": "via…",
+    "orari": "orario",
+    "idUtente": "aziendale(che gestisce i punti vendita)"
+    //
+}
+//*JSON Array --> Ingredienti
+[
+    {
+        "id": "1",
+        "nomeProdotto": "nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+    },
+    {
+        "id": "2""nomeProdotto": "nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+    },
+    {
+        "id": "3""nomeProdotto": "nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+    }
+    //
+]

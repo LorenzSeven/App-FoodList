@@ -1,0 +1,102 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="/SitoWeb1/css/carrello.css">
+    <title>lista ingredienti:</title>
+  </head>
+  <body>
+   
+    <div class="top-bar">
+
+      <div class="header">
+   
+       <div id="logoContainer">
+   
+         <a href="/SitoWeb1/html/mainUtente.html"> 
+           <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+         </a>
+   
+       </div>
+   
+       <input type="text" id="searchBar" onkeyup="barraRicerca()" placeholder="Cerca...">
+
+       <ul id="lista">
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_margherita()"> pizza margherita </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_lasagne()"> lasagne alla Bolognese </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_risotto()"> risotto alla Milanese </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_spaghetti()"> spaghetti alla Carbonara </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tiramisù()"> tiramisù </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tagliatelle()"> tagliatelle al ragù </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_parmigiana()"> parmigiana di melanzane </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_marinara()"> pizza marinara </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_gnocchi()"> gnocchi alla sorrentina </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_ossobuchi()"> ossobuchi alla Milanese </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_sacher()"> torta sacher </a>  </li>
+       <br>
+       <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_arancini()"> arancini di riso </a>  </li>
+       <br>
+       </ul>
+   
+        <div class="header-right">
+          <a class="topA" href="/SitoWeb1/html/login.html">LOGIN</a>
+          <a class="topA" href="/SitoWeb1/html/carrello.html">CARRELLO</a>
+          <a class="topA" href="/SitoWeb1/html/preferiti.html">PREFERITI ❤️</a>
+       </div>
+       <label for="check" class="checkbtn">
+         <i class="fa fa-bars"></i>
+     </div>
+     </label>
+     </div> 
+
+<!-- inizio esercizio william -->
+
+<div class="contenitore2">
+    <input type="checkbox" class="checkbox_titolo_ricetta"/>
+    <label class="titolodellaricetta1" for="checkbox_titolo_ricetta">Ricetta Cinese:</label><br>
+    <input type="checkbox" class="checkbox_ingredienti"/>
+    <label class="titolo_degli_ingredienti">pasta</label><br>
+    <input type="checkbox" class="checkbox_ingredienti"/>
+    <label class="titolo_degli_ingredienti">carne </label><br>
+    <input type="checkbox" class="checkbox_ingredienti"/>
+    <label class="titolo_degli_ingredienti">soia</label><br>
+    <input type="checkbox" class="checkbox_titolo_ricetta"/>
+    <label class="titolodellaricetta1" for="checkbox_titolo_ricetta">Vellutata:</label><br>
+    <input type="checkbox" class="checkbox_ingredienti"/>
+    <label class="titolo_degli_ingredienti">carote</label><br>
+    <input type="checkbox" class="checkbox_ingredienti"/>
+    <label class="titolo_degli_ingredienti">pomodoro</label><br>
+    <input type="checkbox" class="checkbox_ingredienti"/>
+    <label class="titolo_degli_ingredienti">pepe nero</label><br>
+    <input type="checkbox" class="checkbox_titolo_ricetta"/>
+    <label class="titolodellaricetta1" for="checkbox_titolo_ricetta">THE':</label><br>
+    <input type="checkbox" class="checkbox_ingredienti"/>
+    <label class="titolo_degli_ingredienti">acqua</label><br>
+    </div>
+    
+    <div class="contenitore_cercanegozio">
+    <input type="text" class="barra_di_ricerca" onkeyup="barraRicerca()" placeholder="inserisci il tuo indirizzo...">
+    <a href="cercaNegozio.html"><button id="button" class="myButton">Cerca il Negozio:</button></a>
+  </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/SitoWeb1/javascript/carrello.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/SitoWeb1/javascript/main.js"></script>
+  </body>
+</html>

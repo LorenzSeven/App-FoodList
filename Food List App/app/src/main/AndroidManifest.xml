@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".GlobalState"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/hamburger_icon_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodListApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.utenteAzienda.AggiungiIngredientiNegozioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteAzienda.VisualizzaIngredientiNegozioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteAzienda.AggiungiSedeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteConsumer.IngredientiRicettaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteConsumer.CarrelloActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteConsumer.ListaRicetteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteConsumer.ListaPreferitiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteAzienda.HomeAziendaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.utenteConsumer.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteConsumer.RegistrazioneUtenteActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.utenteAzienda.LoginAziendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteAzienda.RegistrazioneAziendaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.utenteConsumer.ProfiloUtenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteAzienda.ProfiloAziendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteConsumer.DescrizionePiattoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".oggetti.LocationManager"
+            android:exported="false" />
+        <activity
+            android:name=".activity.utenteConsumer.CercaNegozioActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.utenteConsumer.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

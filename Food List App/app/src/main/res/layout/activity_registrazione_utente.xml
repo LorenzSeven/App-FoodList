@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sfondoLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.utenteConsumer.RegistrazioneUtenteActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sfondo_home_green" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mini_logo" />
+
+        <TextView
+            android:id="@+id/REGISTRAZIONE"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="60dp"
+            android:text="REGISTRAZIONE"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="30dp"
+            android:hint="nome utenteConsumer"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/emailUtente"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+            android:hint="email"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/passwordUtente"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="30dp"
+            android:hint="password"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="50dp"
+            android:enabled="true"
+            android:text="REGISTRATI" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ImageViewNegozio"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/TextViewNomeAzienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ImageViewNegozio"
+        android:text="Azienda"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextViewIndirizzo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewNomeAzienda"
+        android:layout_toRightOf="@id/ImageViewNegozio"
+        android:text="Indirizzo negozio"
+        android:textSize="25sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewIndirizzo"
+        android:layout_toRightOf="@id/ImageViewNegozio">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Orario: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TextViewOre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Apertura/Chiusura"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

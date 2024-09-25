@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descrizione del piatto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/SitoWeb1/css/Descrizione_piatto.css">
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="header">
+      <div id="logoContainer">
+        <a href="/SitoWeb1/html/mainUtente.html">
+          <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+        </a>
+      </div>
+
+      <input type="text" id="searchBar" onkeyup="barraRicerca()" placeholder="Cerca...">
+
+    <ul id="lista">
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_margherita()"> pizza margherita </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_lasagne()"> lasagne alla Bolognese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_risotto()"> risotto alla Milanese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_spaghetti()"> spaghetti alla Carbonara </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tiramisù()"> tiramisù </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_tagliatelle()"> tagliatelle al ragù </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_parmigiana()"> parmigiana di melanzane </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_pizza_marinara()"> pizza marinara </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_gnocchi()"> gnocchi alla sorrentina </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_ossobuchi()"> ossobuchi alla Milanese </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_sacher()"> torta sacher </a>  </li>
+    <br>
+    <li>  <a href="/SitoWeb1/html/Descrizione_piatto.html" onclick="ricetta_arancini()"> arancini di riso </a>  </li>
+    <br>
+    </ul>
+
+      <div class="header-right">
+        <a class="topA" href="/SitoWeb1/html/login.html">LOGIN</a>
+        <a class="topA" href="/SitoWeb1/html/carrello.html">CARRELLO</a>
+        <a class="topA" href="/SitoWeb1/html/preferiti.html">PREFERITI❤️</a>
+      </div>
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+    </div>
+    </label>
+  </div>
+
+  <section id="sezione_ricetta">
+    <!--
+    <div id="div_Ricetta">
+
+      <div class="contenitore_titolo_ricetta">
+        <h1 class="titolo">Titolo della Ricetta</h1>
+        <button class="cuore">Aggiungi ai preferiti ❤️</button>
+      </div>
+
+      <div class="contenitore_immagine_descrizione">
+        <div id="immagine_ricetta">Immagine Ricetta</div>
+        <div class="descrizione">
+          <table class="tabella_proprietà">
+            <tr>
+              <td class="proprietà_sopra"><b>Tipo:</b></td>
+            </tr>
+            <tr>
+              <td class="proprietà"><b>Nazionalità:</b></td>
+            </tr>
+            <tr>
+              <td class="proprietà"><b>Tempo di preparazione:</b></td>
+            </tr>
+            <tr>
+              <td class="proprietà_sotto"><b>Difficoltà:</b></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+      <h1 class="titolo_ingredienti">Ingredienti</h1>
+
+      <div id="contenitore_ingredienti">
+        <style>
+          .colonna_quantità {
+            left: -60px;
+          }
+        </style>
+        <table id="tabella_ingredienti">
+          <tr>
+            <td class="colonna_ingrediente"><b>-Ingrediente 1:</b></td>
+            <td class="colonna_quantità"> N°g</td>
+            <td class="colonna_ingrediente"><b>-Ingrediente 2:</b></td>
+            <td class="colonna_quantità"> N°g </td>
+          </tr>
+          <tr>
+            <td class="colonna_ingrediente"><b>-Ingrediente 3:</b></td>
+            <td class="colonna_quantità">N°g</td>
+            <td class="colonna_ingrediente"><b>-Ingrediente 4:</b></td>
+            <td class="colonna_quantità">N°g</td>
+          </tr>
+          <tr>
+            <td class="colonna_ingrediente"><b>-Ingrediente 5:</b></td>
+            <td class="colonna_quantità">N°g</td>
+            <td class="colonna_ingrediente"><b>-Ingrediente 6:</b></td>
+            <td class="colonna_quantità">N°g</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <a class="aggiungi_carrello">Aggiungi al Carrello</a>
+
+      <h1 class="titolo_preparazione">Descrizione</h1>
+
+      <div class="contenitore_preparazione">
+        <div id="step">
+          <h class="titolo_step">Preparazione</h><br>
+          <br>
+          <h class="titolo_step">Step 1</h><br>
+          ➀ Step 1<br>
+          <br>
+          <h class="titolo_step">Step 2</h><br>
+          ➁ Step 2<br>
+          <br>
+          <h class="titolo_step">Step 3</h><br>
+          ➂ Step 3<br>
+          <br>
+          <h class="titolo_step">Conservazione</h><br>
+          Step Conservazione<br>
+          <br>
+          <h class="titolo_step">Intolleranze</h><br>
+          Intolleranze<br>
+          <br>
+        </div>
+      </div>
+    </div>-->
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/SitoWeb1/javascript/Descrizione_piatto.js" charset="utf-8"></script>
+
+ 
+</body>
+
+</html>

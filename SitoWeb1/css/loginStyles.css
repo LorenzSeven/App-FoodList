@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #FFFFF0;
+    height: 600px;
+    overflow: hidden;
+}
+
+h1{
+    /*aspetto*/
+    width: 100%;
+    height: 50px;
+    color: black;
+    /*posizione*/
+    margin:auto;
+    text-align: center;
+}
+
+h3{
+    width: 100%;
+    height: 20px;
+    /*posizione*/
+    margin: auto;
+    text-align: center;
+    font-size:x-large;
+    color: #59A52C;
+}
+
+h5{
+    width: 100%;
+    height: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+a{
+    width: 100%;
+    height: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    /*caratteristiche*/
+    text-decoration: none;
+    color: black;
+}
+
+.linkButton{
+        /*aspetto*/
+        width: 100px;
+        height: 30px;
+        border: black solid;
+        /*posizione*/
+        display: inline-block;
+        position: relative;
+        top: 25%;
+        margin-left: 2%;
+         /*caratteristiche*/
+         font-size: 70%;
+         word-break:normal;
+         text-align: center;
+}
+
+#scatolozzaMailLogin{
+    /*aspetto*/
+    height: 400px;
+    width: 400px;
+    border: black solid;
+    /*posizione*/
+    margin:auto;
+    padding: 0;
+    /*caratteristiche*/
+    border-radius: 8%;
+
+}
+
+.submit{
+    width: 270px;
+    display: block;
+}
+
+.boxLogin{
+    width: 265px;
+    display: block;
+}
+
+#formUtente {
+    /*aspetto*/
+    height: 40px;
+    width: 270px;
+    display: block;
+    /*posizione*/
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 65px;
+    position: absolute;
+}
+
+#formAzienda{
+    /*aspetto*/
+    height: 40px;
+    width: 270px;
+    display: none;
+    /*posizione*/
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 65px;
+}
+
+#sfondoLogin{
+    /*aspetto*/
+    height: 100%;
+    /*posizione*/
+    display: block;
+    /*caratteristiche*/
+    text-align: center;
+}
+
+#immagine{
+    width: 100%;
+    height: 1300px;
+    position: absolute;
+    top: -180px;
+    z-index: -10;
+}
+
+.btn{
+    /*aspetto*/
+    width: 100px;
+    height: 48px;
+    border: black solid 1px;
+    /*posizione*/
+    display: inline-block;
+    margin-top: auto;
+    margin-left: 2%;
+     /*caratteristiche*/
+     font-size: 70%;
+     word-break:normal;
+     text-align: center;
+}
+
+#recuperaPassword{
+    display: inline-block;
+    margin: 0;
+}
+
+#registerButton{
+    /*aspetto*/
+    width: 100px;
+    height: 34px;
+    border: black solid 1px;
+    /*posizione*/
+    position: absolute;
+    bottom: 17%;
+    right: 38%;
+    /*caratteristiche*/
+    font-size: 10px;
+    word-break:normal;
+    text-align: center;
+}
+
+#registerButton:hover{
+    background-color: gainsboro;
+   /* box-shadow: gainsboro 0px 0px 10px 0px; */
+}
+
+#logoContainer{
+    display: block;
+    margin: auto;
+    height: 80px;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  #logo{
+    width: 100%;
+    height: 100%;
+  }
+
+  .utenteLabel {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    right: 65px;
+} 
+
+.aziendaLabel {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+} 

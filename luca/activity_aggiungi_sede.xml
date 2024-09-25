@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".AggiungiSedeActivity"
+    >
+
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="14dp"
+        android:hint="nome sede" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="138dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:shadowColor="@color/black"
+        android:text="AGGIUNGI SEDE"
+        android:textColor="@color/white" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_below="@+id/viadellasede"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="22dp"
+        android:hint="via della sede" />
+
+
+    <TextView
+
+        android:id="@+id/viadellasede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="134dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:stretchColumns="1"
+        android:text="VIA DELLA SEDE"
+        android:textColor="@color/white" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_below="@+id/citta"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="9dp"
+        android:hint="citta" />
+
+    <TextView
+        android:id="@+id/citta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="136dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="CITTA'/REGIONE"
+        android:textColor="@color/white" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_below="@+id/numero_di_cellulare"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="9dp"
+        android:hint="numero di cellulare" />
+
+    <TextView
+        android:id="@+id/numero_di_cellulare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="84dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="NUMERO DI CELLULARE"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="108dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="495dp"
+        android:background="@color/black"
+        android:text="NEXT" />
+
+</RelativeLayout>
+
+

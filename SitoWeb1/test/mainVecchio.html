@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="/SitoWeb1/css/mainStyles.css">    
+</head>
+<body>
+    
+    <div class="topBar">
+
+        <a id="logoContainer" href="/SitoWeb1/html/mainPage.html">
+            <img id="logo" src="/SitoWeb1/immagini/logo.webp">
+        <p class="scrittaLogo">Nome Sito</p>
+        </a>
+
+        <input type="text" id="searchBar" onkeyup="barraRicerca()" placeholder="Cerca...">
+
+        <ul id="lista">
+            <li><a href="/SitoWeb1/html/ricette/lasagne.html">Lasagne</a></li>
+            <li><a href="/SitoWeb1/html/ricette/spaghettiScoglio.html">Spaghetti allo scoglio</a></li>
+          
+            <li><a href="/SitoWeb1/html/ricette/tiramisù.html">Billy</a></li>
+            <li><a href="#">Bob</a></li>
+          
+            <li><a href="#">Calvin</a></li>
+            <li><a href="#">Christina</a></li>
+            <li><a href="#">Cindy</a></li>
+          </ul>
+
+                
+        <a href="/SitoWeb1/html/login.html" id="barButton1"> LOGIN </a>
+        <div id="barButton2"> CARRELLO </div>
+    </div>
+
+    <div id="smallBar">
+        <div id="hamburger"> ☰ </div>    
+
+        <div id="preferiti">
+            <a id="hoverPreferiti" href="preferiti.html"> PREFERITI❤️</a>
+        </div>
+        <div class="smallbarButton"> <a href="vuoto"></a> PRIMI PIATTI</div>
+        <div class="smallbarButton"> <a href="vuoto"></a> SECONDI </div>
+        <div class="smallbarButton"> <a href="vuoto"></a> DESSERT </div>
+    </div>
+    <div id="menuTendina"></div>
+    
+    <h1> Riquadri delle Ricette: </h1>
+
+    <div class="sfondo">
+
+        <div id="box">
+
+            <a class="riquadriRicette" href="/SitoWeb1/html/ricette/lasagne.html"> 
+            <a class="riquadriRicette" href="/SitoWeb1/html/ricette/spaghettiScoglio.html"> SPAGHETTI </a>
+            <a class="riquadriRicette" href="/SitoWeb1/html/ricette/tiramisù.html"> 
+                <img src="/SitoWeb1/immagini/tiramisu.jpg" alt="non trovata">     
+            </a>
+            <a class="riquadriRicette" href="/SitoWeb1/html/risultatoRicerca.html"> </a>
+            <a class="riquadriRicette" href="/SitoWeb1/html/risultatoRicerca.html"> </a>
+            <a class="riquadriRicette" href="/SitoWeb1/html/risultatoRicerca.html"> </a>
+            <a class="riquadriRicette" href="/SitoWeb1/html/risultatoRicerca.html"> </a>
+            <a class="riquadriRicette" href="/SitoWeb1/html/risultatoRicerca.html"> </a>
+        </div>
+    </div>
+
+    <div id="bottomRow">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/SitoWeb1/javascript/main.js"></script>
+</body>
+</html>

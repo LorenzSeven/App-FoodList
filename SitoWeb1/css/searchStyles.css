@@ -1,0 +1,195 @@
+* {box-sizing: border-box;}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/SitoWeb1/immagini/sfondoMain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+/*BARRA IN ALTO*/
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header {
+  height: 90px;
+  overflow: hidden;
+  /*background-image: linear-gradient( red,rgb(191, 72, 72)); */
+  background-color: white;
+  border-bottom: #59A52C solid 2px;
+  padding: 20px 20px;
+    
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0px 0px 10px 0px #59A52C;
+}
+
+.topA {
+  float: left;
+  background-color: white;
+  color:#59A52C;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 35px;
+  
+}
+
+
+.header a:active {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a:hover {
+  color:#8deb57;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+}
+
+.header-right {
+  float: right;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .header-right{
+    display: none;
+  }
+
+}
+@media screen and (min-width: 900px){
+    .checkbtn{
+        display: none;
+    }
+  
+    
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: rebeccapurple;
+    
+    
+}
+
+#check{
+    display: none;
+
+}
+
+#logoContainer{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 80px;
+  width: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#logo{
+  width: 100%;
+  height: 100%;
+}
+
+#searchBar {
+    /*aspetto*/
+    height: 45px;
+    width: 300px;
+    border-radius: 20px;
+    /*caratteristiche*/
+    font-size: 16px;
+    padding: 5px 10px 5px 20px;
+    border: black solid 2px;
+    color: #59A52C;
+}
+
+/*AGGIUNTE*/
+
+
+#lista {
+    /*aspetto*/
+    height: 20px;
+    width: 200px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: black;
+    /*posizione*/
+    position: absolute;
+    top: 53px;
+    left: 37%;
+    padding: 6px;
+    /*caratteristiche*/
+    text-decoration: none;
+    font-size: 14px;
+    position: absolute;
+    height: fit-content;
+    width: max-content;
+    list-style: none;
+    visibility: hidden;
+  }
+  
+  #myUL li a:hover:not(.header) {
+    color: red;
+  }
+  
+  
+  .sfondo{
+    /*aspetto*/
+    height: 1000px;
+    /*posizione*/
+    margin-top:20px;
+    /*caratteristiche*/
+    display: flex;
+    justify-content: center;
+  }
+
+#scatolozzaRisultato{
+    /*aspetto*/
+    height: 300px;
+    width: 800px;
+    background-color: rgb(134, 134, 134);
+    /*posizione*/
+    display:inline-block;
+    margin-top: 20px;
+}
+
+#scatolozzaImmagine{
+       /*aspetto*/
+       height: 300px;
+       width: 296px;
+       border: black solid 2px;
+       background-color: rgb(255, 255, 255);
+       /*posizione*/
+       line-height: 300px;
+       text-align: center;
+       display:block;
+}
+
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 

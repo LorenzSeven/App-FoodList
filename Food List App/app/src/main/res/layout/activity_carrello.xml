@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.utenteConsumer.CarrelloActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:src="@drawable/ic_arrow_back" />
+
+        <EditText
+            android:id="@+id/editTextSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="99"
+            android:background="@drawable/border_black"
+            android:drawableStart="@drawable/ic_search_bar"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:hint="Ricerca Food List"
+            android:inputType="text"
+            android:paddingHorizontal="2.5dp"
+            android:paddingVertical="8dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewTitolo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutTopBar"
+        android:gravity="center"
+        android:text="Il tuo carrello:"
+        android:textSize="35sp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBtnIndirizzo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitolo"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextIndirizzoUtenteCarrello"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:hint="inserisci tuo indirizzo..."
+            android:paddingHorizontal="10dp"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnCercaNegozio"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewTitolo"
+            android:text="Cerca Negozio" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDistanza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutBtnIndirizzo"
+        android:layout_marginVertical="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/textViewDistanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="distanza: "
+            android:textSize="25sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtn5km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="5km"
+            android:textOn="5km" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtn10km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="10km"
+            android:textOn="10km" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtn15km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="15km"
+            android:textOn="15km" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutDistanza"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        android:paddingBottom="50dp"
+        android:divider="@color/white"
+        android:dividerHeight="2dp" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu_consumer" />
+
+</RelativeLayout>

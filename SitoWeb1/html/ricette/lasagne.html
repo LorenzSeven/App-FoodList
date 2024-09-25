@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lasagne al ragù</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/SitoWeb1/css/Descrizione_piatto.css">
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="header">
+     <div id="logoContainer">
+       <a href="/SitoWeb1/html/mainUtente.html"> 
+         <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+       </a>
+     </div>
+ 
+      <input type="text" id="searchBar" onkeyup="barraRicerca()" placeholder="Cerca...">
+ 
+      <div class="header-right">
+        <a class="topA" href="/SitoWeb1/html/login.html">LOGIN</a>
+        <a class="topA" href="/SitoWeb1/html/carrello.html">CARRELLO</a>
+        <a class="topA" href="/SitoWeb1/html/preferiti.html">PREFERITI❤️</a>
+     </div>
+     <label for="check" class="checkbtn">
+       <i class="fa fa-bars"></i>
+   </div>
+   </label>
+   </div> 
+
+  <div class="contenitore_titolo_ricetta">
+    <h1 class="titolo">Lasagne al ragù</h1>
+    <button class="cuore">Aggiungi ai preferiti ❤️</button>
+  </div>
+
+  <div class="contenitore_immagine_descrizione">
+    <div class="immagine_ricetta"><img id = "foto_ricetta" src="/SitoWeb1/immagini/Lasagne_al_ragù_descrizione_piatto.png"></div>
+      <div class="descrizione">
+        <table class="tabella_proprietà">
+          <tr>
+           <td class="proprietà_sopra"><b>Tipo:</b> Primo piatto</td>
+          </tr>
+          <tr>
+           <td class="proprietà"><b>Nazionalità:</b> Italiana</td>
+          </tr>
+          <tr>
+           <td class="proprietà"><b>Tempo di preparazione:</b> 3 ore</td>
+          </tr>
+          <tr>
+           <td class="proprietà_sotto"><b>Difficoltà:</b> Media</td>
+          </tr>
+       </table>
+      </div>
+
+  </div>
+
+  <h1 class="titolo_ingredienti">Ingredienti</h1>
+
+  <div class="contenitore_ingredienti"> 
+    <style>.colonna_quantità{left:0px;}</style>
+    <table>
+      <tr>
+        <td class = "colonna_ingrediente"><b>-Carne macinata di manzo:</b></td> <td class="colonna_quantità">700g</td>
+        <td class = "colonna_ingrediente"><b>-Carne macinata di maiale:</b></td>  <td class="colonna_quantità">300g</td>
+      </tr>
+      <tr>
+        <td class = "colonna_ingrediente"><b>-Polpa di pomodoro: </b></td> <td class="colonna_quantità">800g</td>
+        <td class = "colonna_ingrediente"><b>-Carota piccola: </b></td>      <td class="colonna_quantità">1</td>
+      </tr>
+      <tr>
+        <td class = "colonna_ingrediente"><b>-Sedano: </b></td>         <td class="colonna_quantità">1</td>
+        <td class = "colonna_ingrediente"><b>-Cipolla piccola: </b></td><td class="colonna_quantità">1</td>
+      </tr>
+      <tr>
+        <td class = "colonna_ingrediente"><b>-Foglie di alloro: </b></td> <td class="colonna_quantità">2</td>
+        <td class = "colonna_ingrediente"><b>-Latte: </b></td><td class="colonna_quantità">1 litro</td>
+      </tr>
+      <tr>
+        <td class = "colonna_ingrediente"><b>-Farina: </b></td> <td class="colonna_quantità">80g</td>
+        <td class = "colonna_ingrediente"><b>-Burro: </b></td><td class="colonna_quantità">80g</td>
+      </tr>
+      <tr>
+        <td class = "colonna_ingrediente"><b>-Noce moscata: </b></td> <td class="colonna_quantità">un pizzico</td>
+        <td class = "colonna_ingrediente"><b>-Pasta all'uovo (sfoglie per lasagne): </b></td><td class="colonna_quantità">300g</td>
+      </tr>
+      <tr>
+        <td class = "colonna_ingrediente"><b>-Parmigiano reggiano grattugiato: </b></td> <td class="colonna_quantità">80g</td>
+        <td class = "colonna_ingrediente"><b>-Sale: </b></td><td class="colonna_quantità">q.b.</td>
+      </tr>
+      <tr>
+        <td class = "colonna_ingrediente"><b>-Pepe: </b></td> <td class="colonna_quantità">q.b.</td>
+      </tr>
+    </table>
+  </div>
+
+  <a class="aggiungi_carrello" href="/SitoWeb1/html/carrello.html">Aggiungi al Carrello</a>
+  <h1 class="titolo_preparazione">Descrizione</h1>
+  <div class="contenitore_preparazione"> 
+    <div class="step">
+      <h class = "titolo_step">Preparazione</h><br><br>
+     <h class = "titolo_step">Step 1</h><br>
+     Fate stufare il soffritto di carote, sedano e cipolla tritati finemente in una casseruola con poco olio, bagnando eventualmente con dell’acqua fino a che non diventeranno tenerissimi.<br><br>
+     <h class = "titolo_step">Step 2</h><br>
+     Unite la carne macinata e fatela rosolare velocemente per bene a fuoco medio-alto. Salate e pepate. Quando la carne risulta asciutta, sfumatela con il vino rosso corposo e fatelo evaporare a fuoco vivo.<br><br>
+      <h class = "titolo_step">Step 3</h><br>
+      Aggiungete la polpa di pomodoro frullata, un paio di foglie di alloro e mescolate. Proseguite la cottura a fuoco basso coprendo con il coperchio per almeno 1 ora mescolando ogni tanto. Assaggiate il ragù e regolate eventualmente di sapore con sale e pepe. Se avete più tempo a disposizione fate cuocere il ragù per più tempo, aggiungendo eventualmente dell’acqua se si dovesse seccare troppo.<br><br>
+      <h class = "titolo_step">Step 4</h><br>
+      Nel frattempo preparare la besciamella. Fate fondere il burro in una casseruola, unite la farina e versateci dentro tutto il latte freddo, lavorando con una frusta.
+      Lasciate cuocere sempre mescolando fino ad ottenere una besciamella liscia e abbastanza fluida. Salate e date carattere con una grattata di noce moscata.<br><br>
+      <h class = "titolo_step">Step 5</h><br>
+      Fate cuocere i fogli di pasta all’uovo in abbondante acqua bollente salata. Sbollentateli uno alla volta per circa 30 secondi e scolateli su un panno da cucina pulito distanziati.<br><br>
+      <h class = "titolo_step">Step 6</h><br>
+      Imburrate una pirofila da 20 x 30 centimetri e foderatela con le sfoglie di pasta all’uovo, versateci un leggero strato di ragù, uno di besciamella e una spolverata di parmigiano grattugiato.<br><br>
+      <h class = "titolo_step">Step 7</h><br>
+      Coprite con le sfoglie di pasta e proseguite con altri strati fino ad esaurimento degli ingredienti. In base a questi quantità dovreste ottenere 5 strati.<br><br>
+      <h class = "titolo_step">Step 8</h><br>
+      Infornate la lasagna a 180° per circa 30 minuti, finché la superficie non risulterà croccante e dorata.<br><br>
+      <h class = "titolo_step">Conservazione</h><br>
+      Conservate il ragù in frigorifero, chiuso in un contenitore ermetico, per 2-3 giorni al massimo. E' possibile congelare il ragù.<br>
+      Potete conservare le lasagne in frigorifero, coperte con pellicola trasparente o in un contenitore ermetico per 1-2 giorni. <br>
+      Si possono preparare il giorno prima, mantenere in frigorifero coperte con pellicola trasparente e cuocere il giorno dopo.<br>
+      E’ possibile congelarle, solo se si sono utilizzati tutti ingredienti freschi, meglio da crude: per cuocerle sarà sufficiente scongelarle in frigorifero circa 24 ore prima e poi cuocerle in forno.<br><br>
+      <h class = "titolo_step">Intolleranze</h><br>
+      Uova, Latte
+    </div>
+  </div>
+  <script src="/SitoWeb1/javascript/Descrizione_piatto.js" charset="utf-8"></script>
+</body>
+
+</html>

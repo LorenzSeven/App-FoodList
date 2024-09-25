@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Login </title>
+    <link rel="stylesheet" href="/SitoWeb1/css/loginStyles.css">    
+</head>
+<body>
+    
+  <img id="immagine" src="/SitoWeb1/immagini/sfondoLogin.png" alt="non trovata">
+    <div id="sfondoLogin">
+
+      <br>
+      <div id="logoContainer">
+
+        <a href="/SitoWeb1/html/mainUtente.html"> 
+          <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+        </a>
+  
+      </div>
+
+        <div id="scatolozzaMailLogin">
+
+          <br>
+        
+            <h3> ACCEDI </h3>
+
+            <input type="radio"  class="utenteLabel" id="utente" name="userType" value="utente">
+            <label for="utente"  class="utenteLabel"> utente </label>
+            <input type="radio"  class="aziendaLabel" id="azienda" name="userType" value="azienda">
+            <label for="azienda" class="aziendaLabel"> azienda </label><br>  
+
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            
+            <form id="formUtente" action="http://localhost:8080/User/sitoLogin" method="post" target="dummyframe">
+                
+                  <br>
+                <input type="email" id="emailUtente" name="emailUtente" value="" class="boxLogin" required placeholder=" indirizzo email">
+                  <br>
+                  <br>
+                <input type="password" id="passwordUtente" name="passwordUtente" value="" class="boxLogin" required placeholder=" password">
+                  <br>
+                  <br>
+                  <br>
+                <input type="submit" value="LOGIN" id="submitUtente">
+                  <br>
+                  <br>
+                </form>  
+
+                <form id="formAzienda" action="http://localhost:8080/User/sitoLoginAzienda" method="post" target="dummyframe">
+                
+                  <br>
+                <input type="email" id="emailAzienda" name="emailAzienda" class="boxLogin" placeholder=" email azienda" required>
+                  <br>
+                  <br>
+                <input type="password" id="passwordAzienda" name="passwordAzienda" class="boxLogin" placeholder=" password" required>
+                  <br>
+                  <br>
+                  <br>
+                <input type="submit" value="LOGIN" id="submitAzienda">
+                  <br>
+                  <br>
+                </form>  
+                
+                <button id="registerButton"> 
+                  <a href="/SitoWeb1/html/registrazione.html"> non hai un account? registrati! </a>
+                </button>  
+                  <br>  
+              </div>
+              <br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/SitoWeb1/javascript/login.js"></script>
+</body>
+</html>

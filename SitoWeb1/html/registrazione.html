@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Registrazione </title>
+    <link rel="stylesheet" href="/SitoWeb1/css/registerStyles.css">    
+</head>
+<body>
+    
+  <img id="immagine" src="/SitoWeb1/immagini/sfondoLogin.png" alt="non trovata">
+    <div id="sfondoLogin">
+      <br>
+      <div id="logoContainer">
+
+        <a href="/SitoWeb1/html/mainUtente.html"> 
+          <img id="logo" src="/SitoWeb1/immagini/mini_logo.png" alt="not found">
+        </a>
+  
+      </div>
+
+        <div id="scatolozzaMailRegister">
+
+          <br>
+        
+            <h3 id="TreRegister"> REGISTRATI </h3>
+
+            <input type="radio"  class="utenteLabel" id="utente" name="userType" value="utente">
+            <label for="utente"  class="utenteLabel"> utente </label>
+            <input type="radio"  class="aziendaLabel" id="azienda" name="userType" value="azienda">
+            <label for="azienda" class="aziendaLabel"> azienda </label><br>  
+
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            
+            <form id="formUtente" action="http://localhost:8080/User/sitoRegisterUtente" target="dummyframe" method="post">
+
+                <input name="id" value="20" style="display: none;">
+                  <br>
+                <input type="text" name="nomeUtente" class="boxLogin" placeholder=" nome utente">
+                  <br>
+                  <br>
+                  <br>
+                <input type="email" name="emailUtente" class="boxLogin" placeholder=" indirizzo email">
+                  <br>
+                  <br>
+                  <br>
+                <input type="text" name="passwordUtente" class="boxLogin" placeholder=" password">
+                  <br>
+                  <br>
+                <input type="submit" value="CREA ACCOUNT" class="submit">
+                  <br>
+                  <br>  
+                </form>
+
+              <form id="formAzienda" action="http:localhost:8080/User/sitoRegisterAzienda" target="dummyframe" method="post" >
+              
+                <input name="id" value="20" style="display: none;">
+                  <br>
+                <input type="text" name="brand" class="boxLogin" placeholder=" nome azienda">
+                  <br>
+                  <br>
+                  <br>
+                <input type="text" name="sede_legale" class="boxLogin" placeholder=" sede legale">
+                  <br>
+                  <br>
+                  <br>
+                <input type="email" name="email" class="boxLogin" placeholder=" indirizzo email">
+                  <br>
+                  <br>
+                  <br>
+                <input type="text" name="password" class="boxLogin" placeholder=" password">
+                  <br>
+                  <br>
+                <input type="submit" name="" value="CREA ACCOUNT" class="submit">
+                  <br>
+                  <br>  
+                </form>
+              </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/SitoWeb1/javascript/registrazione.js"></script>
+</body>
+</html>

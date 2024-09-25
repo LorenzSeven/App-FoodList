@@ -1,0 +1,422 @@
+/*QUI COMINCIA LA TOP BAR*/
+
+* {box-sizing: border-box;}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/*BARRA IN ALTO*/
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header {
+  height: 90px;
+  overflow: hidden;
+  /*background-image: linear-gradient( red,rgb(191, 72, 72)); */
+  background-color: white;
+  border-bottom: #59A52C solid 2px;
+  padding: 20px 20px;
+    
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0px 0px 10px 0px #59A52C;
+}
+
+.topA {
+  float: left;
+  background-color: white;
+  color:#59A52C;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 35px;
+  
+}
+
+
+.header a:active {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a:hover {
+  color:#8deb57;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+}
+
+.header-right {
+  float: right;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .header-right{
+    display: none;
+  }
+
+}
+@media screen and (min-width: 900px){
+    .checkbtn{
+        display: none;
+    }
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rebeccapurple;
+}
+
+#check{
+    display: none;
+}
+
+#searchBar {
+    /*aspetto*/
+    height: 45px;
+    width: 300px;
+    border-radius: 20px;
+    /*caratteristiche*/
+    font-size: 16px;
+    padding: 5px 10px 5px 20px;
+    border: black solid 2px;
+    color: #59A52C;
+}
+
+/*AGGIUNTE*/
+
+
+#lista {
+  /*aspetto*/
+  height: 20px;
+  width: 200px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  /*posizione*/
+  position: absolute;
+  top: 53px;
+  left: 37%;
+  padding: 6px;
+  /*caratteristiche*/
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute;
+  height: fit-content;
+  width: max-content;
+  list-style: none;
+  visibility: hidden;
+}
+
+#myUL li a:hover:not(.header) {
+  color: red;
+}
+
+
+.sfondo{
+  /*aspetto*/
+  height: 1000px;
+  /*posizione*/
+  margin-top:20px;
+  /*caratteristiche*/
+  display: flex;
+  justify-content: center;
+}
+
+#box{
+  width: 1100px;
+  height: 500px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.riquadriRicette{
+  /*aspetto*/
+  height: 220px;
+  width: 240px;
+  border: black solid 3px;
+  background-color: white;
+  border-radius: 20px;
+  /*posizione*/
+
+}
+
+.riquadriRicette:hover{
+  box-shadow:#59A52C 0px 0px 10px 0px ;
+}
+
+
+#logoContainer{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 80px;
+  width: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#logo{
+  width: 100%;
+  height: 100%;
+}
+
+/*QUI FINISCE LA TOP BAR*/
+/*________________________________________________________________________________________________*/
+
+
+.contenitore_titolo_ricetta {
+  position: absolute;
+  top:130px;
+  left:210px;
+}
+
+.titolo {
+    background-color: white;
+    display: inline-block;
+}
+
+.cuore {
+  border: solid #d8f8da 2px;
+  box-shadow: 2px 2px 10px grey;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  background-color: #d8f8da;
+  position: relative;
+  top: -2px;
+  left: 10px;
+  display: inline-block;
+  font-size: 17px;
+}
+.cuore:hover{
+  box-shadow: 2px 2px 10px green;
+  color: #8deb57;
+}
+
+.contenitore_immagine_descrizione {
+  height: 393px;
+  width: 850px;
+  box-shadow: 2px 2px 10px grey;
+  border-radius: 10px;
+  background-color: white;
+
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#immagine_ricetta {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 20px;
+    height: 403px;
+    width: 486px;
+    text-align: center;
+    line-height: 390px;
+}
+#foto_ricetta
+{
+  height: 393px;
+  width: 486px;
+  margin-top: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.descrizione {
+    height: 403px;
+    width: 361px;
+    position: relative;
+    top: -403px;
+    left: 486px;
+}
+
+.proprietà {
+    border-bottom: solid black 1px;
+    height: 95px;
+    width: 364px;
+    position: relative;
+    left: 0px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.proprietà_sopra {
+    border-bottom: solid black 1px;
+    height: 95px;
+    width: 364px;
+    position: relative;
+    left: 0px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.proprietà_sotto {
+    height: 95px;
+    width: 364px;
+    position: relative;
+    left: 0px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.tabella_proprietà{
+  position: relative;
+  left: 5px;
+  top: 1px
+  
+}
+
+.titolo_ingredienti {
+    background-color: white;
+    width: 300px;
+    margin-top: 90px;
+    margin-left: 140px;
+}
+
+#contenitore_ingredienti {
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 10px;
+    width: 850px;
+    background-color: white;
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabella_ingredienti{
+  position: relative;
+  left:20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+td{
+  text-align: left;
+  line-height: 40px;
+  font-size: 19px;
+}
+
+.colonna_ingrediente
+{
+  position: relative;
+  left: 0px;
+  width: 360px;
+  line-height: 25px;
+}
+.colonna_quantità
+{
+  position: relative;
+  width: 90px;
+}
+
+
+.aggiungi_carrello {
+    border: solid #d8f8da 2px;
+    box-shadow: 2px 2px 10px grey;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 26px;
+    color: black;
+    background-color: #d8f8da;
+
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    line-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.aggiungi_carrello:hover
+{
+  box-shadow: 2px 2px 10px green;
+  color: #8deb57;
+}
+
+.titolo_preparazione {
+    background-color: white;
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 140px;
+}
+
+.contenitore_preparazione {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 850px;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 10px;
+}
+
+.titolo_step
+{
+  font-weight: 700;
+  text-align: left;
+  font-size: 20px;
+}
+#step {
+    position: relative;
+    text-align: left;
+    line-height: 25px;
+    font-size: 20px;
+    width: 830px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.titolo_conservazione {
+  width: 300px;
+  margin-top: 100px;
+  margin-left: 180px;
+  background-color: white;
+}
+
+.descrizione_step {
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 850px;
+    text-align: left;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

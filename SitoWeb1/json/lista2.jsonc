@@ -1,0 +1,133 @@
+//JASON ARRAY --> "preferiti"
+[
+  {
+    "id": "1",
+    "nome": "nome ricetta",
+ 	"immagine": "url immagine",
+	"tipo Piatto": "primo",
+	"tempo Preparazione": "min",
+	"tempo Cottura": "min",
+	"costo Complessivo": "tot euro",
+	"difficoltà" : "facile",
+	"intolleranze": 
+	[
+        "lattosio",
+        "glutine",
+        "cacao",
+        "uova"
+    ],
+  //*JSON Array --> Ingredienti
+  "Ingredienti":
+  [
+   {
+      "id": "1",
+      "nomeProdotto": "nome",
+      "costoUnitario": "euro",
+      "marcaProdotto": "marca",
+      "pesoSpecifico": "g"
+   },
+   {
+      "id": "2",
+      "nomeProdotto":"nome",
+      "costoUnitario": "euro",
+      "marcaProdotto": "marca",
+      "pesoSpecifico": "g"
+   },
+   {
+      "id": "3",
+      "nomeProdotto": "nome",
+      "costoUnitario": "euro",
+      "marcaProdotto": "marca",
+      "pesoSpecifico": "g"
+   }
+  ],
+
+    "preparazione": "preparazione ricetta(step), conservazione"
+  },
+  {
+    "id": "2",
+    "nome": "nome ricetta",
+ 	"immagine": "url immagine",
+	"tipo Piatto": "primo",
+	"tempo Preparazione": "min",
+	"tempo Cottura": "min",
+	"costo Complessivo": "tot euro",
+	"difficoltà" : "facile",
+	"intolleranze": 
+	[
+        "ittici",
+        "nocciole",
+        "semi"
+    ],
+    //*JSON Array --> Ingredienti
+    "Ingredienti":
+    [
+     {
+        "id": "1",
+        "nomeProdotto": "nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+     },
+     {
+        "id": "2",
+        "nomeProdotto":"nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+     },
+     {
+        "id": "3",
+        "nomeProdotto": "nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+     }
+    ],
+    "preparazione": "preparazione ricetta(step), conservazione"
+  },
+  {
+    "id": "3",
+    "nome": "nome ricetta",
+ 	"immagine": "url immagine",
+	"tipo Piatto": "primo",
+	"tempo Preparazione": "min",
+	"tempo Cottura": "min",
+	"costo Complessivo": "tot euro",
+	"difficoltà" : "facile",
+	"intolleranze": 
+	[
+        "frutta",
+        "verdura",
+        "soia",
+        "arachidi"
+    ],
+    //*JSON Array --> Ingredienti
+    "Ingredienti":
+    [
+     {
+        "id": "1",
+        "nomeProdotto": "nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+     },
+     {
+        "id": "2",
+        "nomeProdotto":"nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+     },
+     {
+        "id": "3",
+        "nomeProdotto": "nome",
+        "costoUnitario": "euro",
+        "marcaProdotto": "marca",
+        "pesoSpecifico": "g"
+     }
+    ],
+    "preparazione": "preparazione ricetta(step), conservazione"
+  }
+]
+
