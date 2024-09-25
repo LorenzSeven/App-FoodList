@@ -12,7 +12,7 @@ public class Dao {
 
     //accedere DB locale 
     private final static String URL = "jdbc:mysql://localhost:3306/";
-     private final static String DATABASE = "db_finale";
+     private final static String DATABASE = "db_foodlist";
      private final static String USERNAME = "root";
      private final static String PASSWORD = "password";
      
